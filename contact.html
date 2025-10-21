@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact – Marya Green Foundation</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23347a3b' d='M12 2C8 6 4 8 2 12c2 4 6 6 10 6s8-2 10-6c-2-4-6-6-10-6z'/%3E%3C/svg%3E" />
+  <style> :root{--soft-green:#e8f8f0;--brand:#2f8a57} body{background:var(--soft-green);} </style>
 </head>
-<body class="bg-green-50 text-gray-800 font-sans">
-  <nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-green-600">🌱 Marya Green Foundation</h1>
-      <div class="space-x-6">
-        <a href="index.html" class="hover:text-green-600">Home</a>
-        <a href="about.html" class="hover:text-green-600">About</a>
-        <a href="blog.html" class="hover:text-green-600">Blog</a>
-        <a href="projects.html" class="hover:text-green-600">Projects</a>
-        <a href="downloads.html" class="hover:text-green-600">Downloads</a>
-        <a href="contact.html" class="text-green-700 font-semibold">Contact</a>
+<body class="antialiased text-gray-800 font-sans">
+
+  <!-- navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <div class="bg-white/90 backdrop-blur shadow">
+      <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="text-2xl font-bold" style="color:var(--brand);">🌱 Marya Green Foundation</div>
+          <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-gray-700">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="projects.html">Projects</a>
+            <a href="downloads.html">Downloads</a>
+            <a href="contact.html" class="text-green-700 font-semibold">Contact</a>
+          </nav>
+
+          <div class="sm:hidden">
+            <button id="nav-toggle-contact" aria-label="Toggle menu" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-1" >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color:var(--brand);">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu-contact" class="sm:hidden hidden border-t border-white/60">
+        <div class="px-4 pt-3 pb-4 space-y-1">
+          <a href="index.html" class="block py-2">Home</a>
+          <a href="about.html" class="block py-2">About</a>
+          <a href="blog.html" class="block py-2">Blog</a>
+          <a href="projects.html" class="block py-2">Projects</a>
+          <a href="downloads.html" class="block py-2">Downloads</a>
+          <a href="contact.html" class="block py-2 text-green-700 font-semibold">Contact</a>
+        </div>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <section class="pt-32 pb-16 max-w-3xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-green-700">Contact Us</h2>
-    <p class="text-gray-600 mt-4">We’d love to hear from you! Fill out the form below to reach out to our team.</p>
+  <main class="pt-24 max-w-3xl mx-auto px-4 pb-12 text-center">
+    <h1 class="text-3xl font-bold text-green-700 mb-4">Contact Us</h1>
+    <p class="text-gray-700 mb-6">We’d love to hear from you — feedback, collaboration, or questions.</p>
 
-    <form class="mt-8 bg-white p-8 rounded-2xl shadow-md space-y-4">
-      <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-lg px-4 py-3" required>
-      <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded-lg px-4 py-3" required>
-      <textarea placeholder="Your Message" class="w-full border border-gray-300 rounded-lg px-4 py-3" rows="4" required></textarea>
-      <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-xl hover:bg-green-700">Send Message</button>
+    <form class="bg-white p-6 rounded-2xl shadow space-y-4 text-left">
+      <label class="block">
+        <span class="text-sm font-medium text-gray-700">Name</span>
+        <input type="text" name="name" class="mt-1 w-full border rounded-lg px-3 py-2" required>
+      </label>
+
+      <label class="block">
+        <span class="text-sm font-medium text-gray-700">Email</span>
+        <input type="email" name="email" class="mt-1 w-full border rounded-lg px-3 py-2" required>
+      </label>
+
+      <label class="block">
+        <span class="text-sm font-medium text-gray-700">Message</span>
+        <textarea name="message" rows="5" class="mt-1 w-full border rounded-lg px-3 py-2" required></textarea>
+      </label>
+
+      <div class="text-right">
+        <button type="submit" class="bg-[#2f8a57] text-white px-6 py-2 rounded-full hover:bg-[#256b44]">Send Message</button>
+      </div>
     </form>
-  </section>
+  </main>
 
-  <footer class="bg-green-700 text-white py-6 text-center">
-    © 2025 Marya Green Foundation. Hear the Voice of Nature.
+  <footer class="bg-[#2f8a57] text-white py-6 text-center">
+    © 2025 Marya Green Foundation. All Rights Reserved. Hear the Voice of Nature 🌱
   </footer>
+
+  <script>
+    const btnC = document.getElementById('nav-toggle-contact');
+    const menuC = document.getElementById('mobile-menu-contact');
+    btnC && btnC.addEventListener('click', () => {
+      if (menuC.classList.contains('hidden')) menuC.classList.remove('hidden');
+      else menuC.classList.add('hidden');
+    });
+  </script>
 </body>
 </html>
