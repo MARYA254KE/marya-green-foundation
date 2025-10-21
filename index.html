@@ -1,63 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>🌱 Marya Green Foundation – Hear the Voice of Nature</title>
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Favicon (inline SVG data URI - small leaf) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23347a3b' d='M12 2C8 6 4 8 2 12c2 4 6 6 10 6s8-2 10-6c-2-4-6-6-10-6z'/%3E%3C/svg%3E" />
+
+  <style>
+    /* solid soft green background to match the brief */
+    :root { --soft-green: #e8f8f0; --brand: #2f8a57; --brand-dark: #256b44; }
+    body { background: var(--soft-green); }
+  </style>
 </head>
-<body class="bg-green-50 text-gray-800 font-sans">
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-green-600">🌱 Marya Green Foundation</h1>
-      <div class="space-x-6">
-        <a href="index.html" class="text-green-700 font-semibold">Home</a>
-        <a href="about.html" class="hover:text-green-600">About</a>
-        <a href="blog.html" class="hover:text-green-600">Blog</a>
-        <a href="projects.html" class="hover:text-green-600">Projects</a>
-        <a href="downloads.html" class="hover:text-green-600">Downloads</a>
-        <a href="contact.html" class="hover:text-green-600">Contact</a>
+<body class="antialiased text-gray-800 font-sans">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <div class="bg-white/90 backdrop-blur shadow">
+      <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-4">
+            <div class="text-2xl font-bold" style="color:var(--brand);">🌱 Marya Green Foundation</div>
+            <div class="hidden sm:block text-sm text-gray-600">Hear the Voice of Nature</div>
+          </div>
+
+          <!-- menu (desktop) -->
+          <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-gray-700">
+            <a href="index.html" class="text-green-700">Home</a>
+            <a href="about.html" class="hover:text-green-800">About</a>
+            <a href="blog.html" class="hover:text-green-800">Blog</a>
+            <a href="projects.html" class="hover:text-green-800">Projects</a>
+            <a href="downloads.html" class="hover:text-green-800">Downloads</a>
+            <a href="contact.html" class="hover:text-green-800">Contact</a>
+          </nav>
+
+          <!-- hamburger (mobile) -->
+          <div class="sm:hidden">
+            <button id="nav-toggle" aria-label="Toggle menu" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-1" >
+              <!-- hamburger icon -->
+              <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color:var(--brand-dark);">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div id="mobile-menu" class="sm:hidden hidden border-t border-white/60">
+        <div class="px-4 pt-3 pb-4 space-y-1">
+          <a href="index.html" class="block py-2 text-green-700 font-semibold">Home</a>
+          <a href="about.html" class="block py-2 hover:text-green-800">About</a>
+          <a href="blog.html" class="block py-2 hover:text-green-800">Blog</a>
+          <a href="projects.html" class="block py-2 hover:text-green-800">Projects</a>
+          <a href="downloads.html" class="block py-2 hover:text-green-800">Downloads</a>
+          <a href="contact.html" class="block py-2 hover:text-green-800">Contact</a>
+        </div>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="pt-32 pb-16 text-center">
-    <h2 class="text-4xl font-bold text-green-700">Hear the Voice of Nature</h2>
-    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-      Empowering communities to restore, protect, and live in harmony with the environment through awareness, action, and innovation.
-    </p>
-  </section>
+  <!-- PAGE CONTENT -->
+  <main class="pt-24">
 
-  <!-- Blog Preview -->
-  <section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
-    <div class="bg-white p-6 rounded-2xl shadow-md">
-      <h3 class="text-xl font-semibold text-green-700">Reforestation Efforts</h3>
-      <p class="text-gray-600 mt-2">Learn how communities are restoring green spaces and combating deforestation.</p>
-      <a href="blog.html" class="mt-4 inline-block text-green-600 font-semibold">Read more →</a>
+    <!-- Hero -->
+    <section class="mx-auto max-w-4xl px-4 text-center py-10">
+      <h1 class="text-4xl md:text-5xl font-extrabold" style="color:var(--brand);">Hear the Voice of Nature</h1>
+      <p class="mt-4 text-lg text-gray-700">Empowering communities to restore, protect, and live in harmony with the environment through awareness, action, and innovation.</p>
+    </section>
+
+    <!-- centered medium image -->
+    <section class="mx-auto max-w-3xl px-4">
+      <div class="bg-white rounded-2xl shadow-md p-4 flex justify-center">
+        <img alt="Nature scene" src="https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f2d8a1d8a2d3b2a7bb7e7c5f6a2b6b8" class="rounded-lg object-cover max-h-64 w-full sm:w-3/4 md:w-2/3" />
+      </div>
+    </section>
+
+    <!-- My Profile heading (underlined) + text -->
+    <section class="mx-auto max-w-3xl px-4 mt-8">
+      <h2 class="text-2xl font-semibold text-gray-800 underline decoration-green-600 underline-offset-4">My Profile</h2>
+
+      <div class="mt-4 bg-white rounded-2xl p-6 shadow-md text-gray-700 leading-relaxed space-y-4">
+        <p>My name is Marya Chepkorir, I'm 14 years old and currently environmental champion of the year by girl up Kenya. I'm a grade 9 student at St. Georges primary school. Away from school, I'm passionate about environment conservation and girls empowerment. I'm championing for climate justice through participation in environment conservation initiatives such as tree planting activities, so far I have planted more than 5000 trees in six schools in Nairobi county and 3 schools outside Nairobi. I'm the current little miss environment Nairobi county and I'm serving as an ambassador of green schools project at youth care Africa. Because of my love for nature, I have managed to mobilize my peers to join me in the campaign against climate change, I'm currently educating my peers on the impacts of climate change to children and how we can mitigate these impacts. Additionally, I'm championing for menstrual equity through Girls Tubonge Initiative where I meet teenage girls and share our knowledge on how we can manage our menstrual flows. I have donated more than 1000 sanitary pads to girls from Kangemi and in Murang'a County and I'm planning for another Girls Tubonge event in Bomet County where I will host more than 300 girls. I'm looking forward to a more sustainable future and a habitable planet</p>
+      </div>
+    </section>
+
+    <!-- Blog preview cards -->
+    <section class="mx-auto max-w-6xl px-4 mt-10 pb-8">
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">From Our Blog</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-semibold text-green-700">Reforestation Efforts</h4>
+          <p class="mt-2 text-sm text-gray-600">Learn how communities are restoring green spaces and combating deforestation.</p>
+          <a href="blog.html" class="text-green-600 font-semibold mt-3 inline-block">Read more →</a>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-semibold text-green-700">Sustainable Living</h4>
+          <p class="mt-2 text-sm text-gray-600">Discover practical ways to reduce your footprint and support eco-friendly habits.</p>
+          <a href="blog.html" class="text-green-600 font-semibold mt-3 inline-block">Read more →</a>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-semibold text-green-700">Tech for the Planet</h4>
+          <p class="mt-2 text-sm text-gray-600">See how innovation and technology can drive positive environmental change.</p>
+          <a href="blog.html" class="text-green-600 font-semibold mt-3 inline-block">Read more →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Download button just above footer -->
+    <section class="mx-auto max-w-3xl px-4 text-center py-8">
+      <a href="downloads.html" class="inline-block bg-[#2f8a57] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#256b44] transition">📦 Download APK</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-8 bg-[#2f8a57] text-white py-6 text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <div>© 2025 Marya Green Foundation. All Rights Reserved. Hear the Voice of Nature 🌱</div>
     </div>
-    <div class="bg-white p-6 rounded-2xl shadow-md">
-      <h3 class="text-xl font-semibold text-green-700">Sustainable Living</h3>
-      <p class="text-gray-600 mt-2">Discover practical ways to reduce your footprint and support eco-friendly habits.</p>
-      <a href="blog.html" class="mt-4 inline-block text-green-600 font-semibold">Read more →</a>
-    </div>
-    <div class="bg-white p-6 rounded-2xl shadow-md">
-      <h3 class="text-xl font-semibold text-green-700">Tech for the Planet</h3>
-      <p class="text-gray-600 mt-2">See how innovation and technology can drive positive environmental change.</p>
-      <a href="blog.html" class="mt-4 inline-block text-green-600 font-semibold">Read more →</a>
-    </div>
-  </section>
-
-  <!-- Download Button Section -->
-  <section class="text-center py-12">
-    <a href="downloads.html" class="inline-block bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-green-700 transition">
-      Download APK
-    </a>
-  </section>
-
-  <footer class="bg-green-700 text-white py-6 text-center">
-    © 2025 Marya Green Foundation. Hear the Voice of Nature.
   </footer>
+
+  <!-- Small script to toggle mobile menu -->
+  <script>
+    const btn = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    btn && btn.addEventListener('click', () => {
+      if (menu.classList.contains('hidden')) menu.classList.remove('hidden');
+      else menu.classList.add('hidden');
+    });
+  </script>
 </body>
 </html>
