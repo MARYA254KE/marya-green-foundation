@@ -4,16 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>🌱 Marya Green Foundation – Hear the Voice of Nature</title>
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Favicon (inline SVG data URI - small leaf) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23347a3b' d='M12 2C8 6 4 8 2 12c2 4 6 6 10 6s8-2 10-6c-2-4-6-6-10-6z'/%3E%3C/svg%3E" />
-
   <style>
-    /* solid soft green background to match the brief */
-    :root { --soft-green: #e8f8f0; --brand: #2f8a57; --brand-dark: #256b44; }
+    :root { --soft-green:#e8f8f0; --brand:#2f8a57; --brand-dark:#256b44; }
     body { background: var(--soft-green); }
   </style>
 </head>
@@ -29,7 +23,7 @@
             <div class="hidden sm:block text-sm text-gray-600">Hear the Voice of Nature</div>
           </div>
 
-          <!-- menu (desktop) -->
+          <!-- desktop menu -->
           <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-gray-700">
             <a href="index.html" class="text-green-700">Home</a>
             <a href="about.html" class="hover:text-green-800">About</a>
@@ -42,7 +36,6 @@
           <!-- hamburger (mobile) -->
           <div class="sm:hidden">
             <button id="nav-toggle" aria-label="Toggle menu" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-1" >
-              <!-- hamburger icon -->
               <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color:var(--brand-dark);">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
               </svg>
@@ -65,7 +58,6 @@
     </div>
   </header>
 
-  <!-- PAGE CONTENT -->
   <main class="pt-24">
 
     <!-- Hero -->
@@ -74,10 +66,11 @@
       <p class="mt-4 text-lg text-gray-700">Empowering communities to restore, protect, and live in harmony with the environment through awareness, action, and innovation.</p>
     </section>
 
-    <!-- centered medium image -->
+    <!-- Marya portrait (medium, centered) -->
     <section class="mx-auto max-w-3xl px-4">
       <div class="bg-white rounded-2xl shadow-md p-4 flex justify-center">
-        <img alt="Nature scene" src="https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f2d8a1d8a2d3b2a7bb7e7c5f6a2b6b8" class="rounded-lg object-cover max-h-64 w-full sm:w-3/4 md:w-2/3" />
+        <!-- use the local file you saved as assets/marya-portrait.jpg -->
+        <img alt="Marya Chepkorir portrait" src="assets/marya-portrait.jpg" class="rounded-lg object-cover max-h-96 w-full sm:w-3/4 md:w-2/3" />
       </div>
     </section>
 
@@ -90,27 +83,35 @@
       </div>
     </section>
 
-    <!-- Blog preview cards -->
-    <section class="mx-auto max-w-6xl px-4 mt-10 pb-8">
-      <h3 class="text-2xl font-bold text-gray-800 mb-4">From Our Blog</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <article class="bg-white p-6 rounded-xl shadow">
-          <h4 class="font-semibold text-green-700">Reforestation Efforts</h4>
-          <p class="mt-2 text-sm text-gray-600">Learn how communities are restoring green spaces and combating deforestation.</p>
-          <a href="blog.html" class="text-green-600 font-semibold mt-3 inline-block">Read more →</a>
-        </article>
+    <!-- Static gallery (6 portrait-style photos) -->
+    <section class="mx-auto max-w-6xl px-4 mt-8 pb-8">
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">Gallery</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <!-- 1: Marya local photo -->
+        <div class="overflow-hidden rounded-lg shadow bg-white">
+          <img src="assets/marya-portrait.jpg" alt="Marya" class="w-full h-72 object-cover" />
+        </div>
 
-        <article class="bg-white p-6 rounded-xl shadow">
-          <h4 class="font-semibold text-green-700">Sustainable Living</h4>
-          <p class="mt-2 text-sm text-gray-600">Discover practical ways to reduce your footprint and support eco-friendly habits.</p>
-          <a href="blog.html" class="text-green-600 font-semibold mt-3 inline-block">Read more →</a>
-        </article>
+        <!-- 2–6: royalty-free portrait-style nature/action images -->
+        <div class="overflow-hidden rounded-lg shadow bg-white">
+          <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=800&auto=format&fit=crop" alt="Planting tree" class="w-full h-72 object-cover" />
+        </div>
 
-        <article class="bg-white p-6 rounded-xl shadow">
-          <h4 class="font-semibold text-green-700">Tech for the Planet</h4>
-          <p class="mt-2 text-sm text-gray-600">See how innovation and technology can drive positive environmental change.</p>
-          <a href="blog.html" class="text-green-600 font-semibold mt-3 inline-block">Read more →</a>
-        </article>
+        <div class="overflow-hidden rounded-lg shadow bg-white">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop" alt="Child planting" class="w-full h-72 object-cover" />
+        </div>
+
+        <div class="overflow-hidden rounded-lg shadow bg-white">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop" alt="Forest" class="w-full h-72 object-cover" />
+        </div>
+
+        <div class="overflow-hidden rounded-lg shadow bg-white">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Young activist" class="w-full h-72 object-cover" />
+        </div>
+
+        <div class="overflow-hidden rounded-lg shadow bg-white">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Volunteers" class="w-full h-72 object-cover" />
+        </div>
       </div>
     </section>
 
@@ -118,7 +119,6 @@
     <section class="mx-auto max-w-3xl px-4 text-center py-8">
       <a href="downloads.html" class="inline-block bg-[#2f8a57] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#256b44] transition">📦 Download APK</a>
     </section>
-
   </main>
 
   <!-- FOOTER -->
@@ -128,7 +128,6 @@
     </div>
   </footer>
 
-  <!-- Small script to toggle mobile menu -->
   <script>
     const btn = document.getElementById('nav-toggle');
     const menu = document.getElementById('mobile-menu');
