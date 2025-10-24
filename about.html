@@ -60,51 +60,113 @@
       <p class="mt-4 text-gray-700">Marya Green Foundation is a non-profit initiative focused on environmental conservation, education, and sustainable living. We work with communities and young leaders to create meaningful environmental action.</p>
     </section>
 
-    <!-- portrait -->
-    <section class="mx-auto max-w-3xl px-4">
-      <div class="bg-white rounded-2xl shadow-md p-4 flex justify-center">
-        <img alt="Marya Chepkorir portrait" src="assets/marya-portrait.jpg" class="rounded-lg object-cover max-h-96 w-full sm:w-3/4 md:w-2/3" />
+/* PROFILE SECTION */
+    .profile {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .profile img {
+      width: 250px;
+      border-radius: 12px;
+      display: block;
+      margin: 0 auto 1rem auto;
+    }
+    .profile h3 {
+      text-decoration: underline;
+      color: #1b5e20;
+      margin-top: 1rem;
+      font-size: 1.6rem;
+    }
+    .profile p {
+      max-width: 800px;
+      margin: 1rem auto;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    /* DOWNLOAD BUTTON */
+    .download-btn {
+      display: block;
+      width: fit-content;
+      margin: 3rem auto 4rem auto;
+      padding: 12px 25px;
+      background-color: #43a047;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #2e7d32;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #1b5e20;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <h1>🌱 Marya Green Foundation</h1>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
       </div>
-    </section>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+        <a href="downloads.html">Downloads</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- My Profile -->
-    <section class="mx-auto max-w-3xl px-4 mt-8">
-      <h2 class="text-2xl font-semibold text-gray-800 underline decoration-green-600 underline-offset-4">My Profile</h2>
+  <section class="hero">
+    <h2>Hear the Voice of Nature</h2>
+    <p>Welcome to the Marya Green Foundation — inspiring environmental conservation and empowering young leaders to take action for a greener, more sustainable planet.</p>
+  </section>
 
-      <div class="mt-4 bg-white rounded-2xl p-6 shadow-md text-gray-700 leading-relaxed space-y-4">
-        <p>My name is Marya Chepkorir, I'm 14 years old and currently environmental champion of the year by girl up Kenya. I'm a grade 9 student at St. Georges primary school. Away from school, I'm passionate about environment conservation and girls empowerment. I'm championing for climate justice through participation in environment conservation initiatives such as tree planting activities, so far I have planted more than 5000 trees in six schools in Nairobi county and 3 schools outside Nairobi. I'm the current little miss environment Nairobi county and I'm serving as an ambassador of green schools project at youth care Africa. Because of my love for nature, I have managed to mobilize my peers to join me in the campaign against climate change, I'm currently educating my peers on the impacts of climate change to children and how we can mitigate these impacts. Additionally, I'm championing for menstrual equity through Girls Tubonge Initiative where I meet teenage girls and share our knowledge on how we can manage our menstrual flows. I have donated more than 1000 sanitary pads to girls from Kangemi and in Murang'a County and I'm planning for another Girls Tubonge event in Bomet County where I will host more than 300 girls. I'm looking forward to a more sustainable future and a habitable planet</p>
-      </div>
-    </section>
+  <section class="profile">
+    <img src="images/marya.jpeg" alt="Marya Chepkorir at an event">
+    <h3>My Profile</h3>
+    <p>My name is Marya Chepkorir, I'm 14 years old and currently environmental champion of the year by Girl Up Kenya. I'm a grade 9 student at St. Georges primary school. Away from school, I'm passionate about environment conservation and girls empowerment. I'm championing for climate justice through participation in environment conservation initiatives such as tree planting activities — so far I have planted more than 5000 trees in six schools in Nairobi County and 3 schools outside Nairobi. I'm the current Little Miss Environment Nairobi County and serving as an ambassador of the Green Schools Project at Youth Care Africa.</p>
+    <p>Because of my love for nature, I have mobilized my peers to join me in the campaign against climate change. I'm educating my peers on the impacts of climate change on children and how we can mitigate these effects. Additionally, I'm championing menstrual equity through the Girls Tubonge Initiative where I meet teenage girls to share knowledge on menstrual management. I have donated more than 1000 sanitary pads to girls from Kangemi and Murang'a County, and I’m planning for another Girls Tubonge event in Bomet County where I’ll host over 300 girls. I’m looking forward to a more sustainable and habitable planet.</p>
+  </section>
 
-    <!-- same 6-photo gallery -->
-    <section class="mx-auto max-w-6xl px-4 mt-8 pb-8">
-      <h3 class="text-2xl font-bold text-gray-800 mb-4">Gallery</h3>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <div class="overflow-hidden rounded-lg shadow bg-white">
-          <img src="assets/marya-portrait.jpg" alt="Marya" class="w-full h-72 object-cover" />
-        </div>
-
-        <div class="overflow-hidden rounded-lg shadow bg-white">
-          <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=800&auto=format&fit=crop" alt="Planting tree" class="w-full h-72 object-cover" />
-        </div>
-
-        <div class="overflow-hidden rounded-lg shadow bg-white">
-          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop" alt="Child planting" class="w-full h-72 object-cover" />
-        </div>
-
-        <div class="overflow-hidden rounded-lg shadow bg-white">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop" alt="Forest" class="w-full h-72 object-cover" />
-        </div>
-
-        <div class="overflow-hidden rounded-lg shadow bg-white">
-          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Young activist" class="w-full h-72 object-cover" />
-        </div>
-
-        <div class="overflow-hidden rounded-lg shadow bg-white">
-          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Volunteers" class="w-full h-72 object-cover" />
-        </div>
-      </div>
-    </section>
+  <section class="gallery">
+    <img src="images/marya1.jpg" alt="Tree planting">
+    <img src="images/marya2.jpg" alt="Environmental activity">
+    <img src="images/marya3.jpg" alt="School event">
+    <img src="images/marya4.jpg" alt="Climate campaign">
+    <img src="images/marya5.jpg" alt="Team project">
+  </section>
 
   </main>
 
@@ -124,3 +186,4 @@
   </script>
 </body>
 </html>
+
