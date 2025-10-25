@@ -97,7 +97,7 @@
     .profile {
       display: flex;
       flex-wrap: wrap;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
       gap: 2rem;
       max-width: 1100px;
@@ -105,14 +105,14 @@
       padding: 0 1rem;
     }
     .profile img {
-      width: 280px;
+      width: 320px;
       border-radius: 12px;
       flex-shrink: 0;
     }
     .profile-content {
       flex: 1;
       min-width: 300px;
-      text-align: left; /* ✅ Align heading and text to the left */
+      text-align: left;
     }
     .profile-content h3 {
       text-decoration: underline;
@@ -128,12 +128,22 @@
     }
 
     /* GALLERY */
+    .gallery-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .gallery-section h3 {
+      font-size: 1.6rem;
+      color: #1b5e20;
+      margin-bottom: 1.5rem;
+      text-decoration: underline;
+    }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 15px;
       max-width: 900px;
-      margin: 2rem auto;
+      margin: 0 auto 3rem;
       padding: 0 1rem;
     }
     .gallery img {
@@ -142,6 +152,7 @@
       height: 220px;
       object-fit: cover;
     }
+
     /* FOOTER */
     footer {
       text-align: center;
@@ -174,6 +185,7 @@
     <p>Welcome to the Marya Green Foundation — inspiring environmental conservation and empowering young leaders to take action for a greener, more sustainable planet.</p>
   </section>
 
+  <!-- ✅ Profile Section -->
   <section class="profile">
     <img src="images/marya.jpeg" alt="Marya Chepkorir at an event">
     <div class="profile-content">
@@ -183,12 +195,17 @@
     </div>
   </section>
 
-  <section class="gallery">
-    <img src="images/marya1.jpg" alt="Tree planting">
-    <img src="images/marya2.jpg" alt="Environmental activity">
-    <img src="images/marya3.jpg" alt="School event">
-    <img src="images/marya4.jpg" alt="Climate campaign">
-    <img src="images/marya5.jpg" alt="Team project">
+  <!-- ✅ Gallery Section -->
+  <section class="gallery-section">
+    <h3>Gallery Highlights</h3>
+    <div class="gallery">
+      <img src="images/marya1.jpg" alt="Tree planting">
+      <img src="images/marya2.jpg" alt="Environmental activity">
+      <img src="images/marya3.jpg" alt="School event">
+      <img src="images/marya4.jpg" alt="Climate campaign">
+      <img src="images/marya5.jpg" alt="Team project">
+      <img src="images/marya6.jpg" alt="Community awareness">
+    </div>
   </section>
 
   <footer>
@@ -203,11 +220,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
