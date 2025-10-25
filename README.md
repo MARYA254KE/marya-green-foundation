@@ -34,3 +34,8 @@ All pages feature:
 | **Contact** | Reach out to the foundation |
 
 ---
+## 🧑‍🎨 Credits
+Design & Concept: Marya Chepkorir
+Development & Layout Structure: Built using HTML, CSS, and JavaScript
+Icons: Font Awesome
+Images: Stored in /images/ folder (locally or via royalty-free sources)
