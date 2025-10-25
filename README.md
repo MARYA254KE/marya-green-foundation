@@ -32,7 +32,7 @@ This static website includes four responsive pages:
 | **Home** | Overview and introduction |
 | **Blog** | Updates and environmental stories |
 | **Projects** | Ongoing and completed initiatives |
-| **Contact** | Reach out to Marya Foundation |
+| **Contact** | Reach out to Marya Green Foundation |
 
 ---
 ## 🌍 Live Demo
