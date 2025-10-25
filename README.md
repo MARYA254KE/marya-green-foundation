@@ -39,3 +39,10 @@ This static website includes four responsive pages:
 > [https://marya254ke.github.io/marya-green-foundation](https://marya254ke.github.io/marya-green-foundation/)
 
 ---
+## 🌿 Project Screenshots
+
+### Homepage Preview
+![Homepage Screenshot](images/screenshot-home.jpg)
+
+### Gallery Section
+![Gallery](images/gallery-preview.jpg)
