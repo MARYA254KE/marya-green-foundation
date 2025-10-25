@@ -2,8 +2,7 @@
 
 **Hear the Voice of Nature**
 
-The **Marya Green Foundation** is a youth-led environmental initiative founded by myself, **Marya Chepkorir**, a passionate 14-year-old climate champion.  
-I created this website to highlight my projects, environmental campaigns, and efforts to empower other young girls like me to promote climate action.
+The **Marya Green Foundation** is a youth-led environmental initiative founded by myself, **Marya Chepkorir**, a passionate 14-year-old climate champion. I created this website to highlight my projects, environmental campaigns, and efforts to empower other young girls like me to promote climate action.
 
 ---
 
@@ -34,6 +33,12 @@ All pages feature:
 | **Contact** | Reach out to the foundation |
 
 ---
+## 🌍 Live Demo
+> (Add your GitHub Pages link here once deployed, e.g.)  
+> [https://marya254ke.github.io/marya-green-foundation](https://marya254ke.github.io/marya-green-foundation/)
+
+---
+
 ## 🧑‍🎨 Credits
 Design & Concept: Marya Chepkorir
 Development & Layout Structure: Built using HTML, CSS, and JavaScript
