@@ -36,4 +36,16 @@ All pages feature:
 ---
 
 ## 🖼️ Folder Structure
-
+marya-portfolio/
+│
+├── index.html # Home page
+├── blog.html # Blog listing page
+├── projects.html # Portfolio projects page
+├── contact.html # Contact information page
+│
+├── style.css # Global styles
+├── script.js # Mobile menu toggle
+│
+├── README.md # Project documentation
+│
+└── images/ # Folder for all images (gallery, blog, projects)
