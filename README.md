@@ -15,11 +15,13 @@ This static website includes four responsive pages:
 - **Projects** – Showcasing environmental and empowerment projects.  
 - **Contact** – Connect with me (Marya) via email or Instagram.
 
-All pages feature:
-- A consistent green theme 🌿  
-- Mobile-responsive navigation with a hamburger menu  
-- Image grids for galleries and projects  
-- Imagery from the `/images` folder  
+## 🧭 Features
+
+- Responsive navigation menu with hamburger toggle  
+- Hero section featuring my profile & image gallery  
+- Dedicated pages for Home, Blog, Projects, and Contact  
+- Clean 2-column project grid layout (responsive for mobile)  
+- Minimalist design using pure HTML, CSS, and JavaScript  
 
 ---
 
@@ -30,16 +32,10 @@ All pages feature:
 | **Home** | Overview and introduction |
 | **Blog** | Updates and environmental stories |
 | **Projects** | Ongoing and completed initiatives |
-| **Contact** | Reach out to the foundation |
+| **Contact** | Reach out to Marya Foundation |
 
 ---
 ## 🌍 Live Demo
 > [https://marya254ke.github.io/marya-green-foundation](https://marya254ke.github.io/marya-green-foundation/)
 
 ---
-
-## 🧑‍🎨 Credits
-Design & Concept: Marya Chepkorir
-Development & Layout Structure: Built using HTML, CSS, and JavaScript
-Icons: Font Awesome
-Images: Stored in /images/ folder (locally or via royalty-free sources)
