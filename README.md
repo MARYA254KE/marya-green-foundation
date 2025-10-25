@@ -42,7 +42,7 @@ This static website includes four responsive pages:
 ## 🌿 Project Screenshots
 
 ### Homepage Preview
-![Homepage Screenshot](images/screenshot-home.jpg)
+![Homepage Screenshot](images/screenshot-home.png)
 
 ### Gallery Section
-![Gallery](images/gallery-preview.jpg)
+![Gallery](images/gallery-preview.png)
