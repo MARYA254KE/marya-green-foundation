@@ -34,7 +34,6 @@ All pages feature:
 
 ---
 ## 🌍 Live Demo
-> (Add your GitHub Pages link here once deployed, e.g.)  
 > [https://marya254ke.github.io/marya-green-foundation](https://marya254ke.github.io/marya-green-foundation/)
 
 ---
